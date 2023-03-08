@@ -3,7 +3,7 @@
 Simple project based on Quarkus [rest-client-reactive-quickstart](https://github.com/quarkusio/quarkus-quickstarts/tree/2.16.4.Final/rest-client-reactive-quickstart) to reproduce a bug.
 
 Linked issues:
-- TODO
+- https://github.com/quarkusio/quarkus/issues/31692
 - https://github.com/quarkusio/quarkus/issues/28446
 
 ## How to run
