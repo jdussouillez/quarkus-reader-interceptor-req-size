@@ -18,7 +18,10 @@ Linked issues:
 
 ```sh
 $ curl -i -X POST http://localhost:8080/test -H "Content-Type: text/plain" --data-binary "@tests/9kb"
+```
 
+Output:
+```
 HTTP/1.1 100 Continue
 
 HTTP/1.1 200 OK
@@ -32,7 +35,10 @@ true
 
 ```sh
 $ curl -i -X POST http://localhost:8080/test -H "Content-Type: text/plain" --data-binary "@tests/10kb"
+```
 
+Output:
+```
 HTTP/1.1 100 Continue
 
 HTTP/1.1 500 Internal Server Error
