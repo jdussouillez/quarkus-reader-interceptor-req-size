@@ -1,5 +1,6 @@
 package org.acme.interceptor;
 
+import java.io.File;
 import java.io.IOException;
 import javax.inject.Inject;
 import javax.ws.rs.ConstrainedTo;
@@ -20,7 +21,7 @@ public class LogInterceptor implements ReaderInterceptor {
     @Override
     public Object aroundReadFrom(final ReaderInterceptorContext context) throws IOException, WebApplicationException {
         var entity = context.proceed();
-        logService.log((String) entity);
+        logService.log((File) entity);
         return entity;
     }
 }

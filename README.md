@@ -17,7 +17,7 @@ Linked issues:
 2. Call the API with a body of less than 10000 bytes. It works.
 
 ```sh
-$ curl -i -X POST http://localhost:8080/test -H "Content-Type: text/plain" --data-binary "@tests/9kb"
+$ curl -i -X POST http://localhost:8080/test -H "Content-Type: application/octet-stream" --data-binary "@tests/9kb"
 ```
 
 Output:
@@ -34,7 +34,7 @@ true
 3. Call the API with a body of more than 10000 bytes. Now it fails.
 
 ```sh
-$ curl -i -X POST http://localhost:8080/test -H "Content-Type: text/plain" --data-binary "@tests/10kb"
+$ curl -i -X POST http://localhost:8080/test -H "Content-Type: application/octet-stream" --data-binary "@tests/10kb"
 ```
 
 Output:
